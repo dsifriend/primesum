@@ -1,0 +1,34 @@
+name:                PrimeSum
+version:             0.1.0.2
+synopsis:            Computes sum of primes up to a given Integer.
+description:         Computes sum of primes up to the integer provided as first command-line argument. It makes use of arithmetic progressions to compute the sum.
+homepage:            https://github.com/dsifriend/primesum
+license:             BSD2
+license-file:        LICENSE
+author:              Albert R.
+copyright:           2020 Albert R.
+category:            Math
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+
+library
+  exposed-modules:     PrimeSum
+  other-modules:       Subsequences
+  hs-source-dirs:      src
+  build-depends:       base >= 4.7 && < 5
+                     , primes
+                     , integer-roots
+                     , integer-gmp
+  default-language:    Haskell2010
+  ghc-options:         -Wall -Werror -O2
+
+executable primesum
+  hs-source-dirs:      exe
+  build-depends:       base >= 4.7 && < 5
+                     , PrimeSum
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  ghc-options:         -Wall -Werror -O2
+
+
