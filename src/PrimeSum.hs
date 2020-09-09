@@ -1,10 +1,7 @@
 module PrimeSum where
     
--- import Data.List
 import Data.Numbers.Primes
 import Math.NumberTheory.Roots
-
-import Subsequences
 
 
 -- "Triangle numbers"; argument always interpreted as =>0, unlike math function.

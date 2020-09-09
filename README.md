@@ -12,6 +12,4 @@ The program depends on the [`integer-roots`](https://hackage.haskell.org/package
 The recommended build tool for this project is `stack`. A simple `stack build`
 from the project's root directory should suffice.
 
-## Notes
-It could be worth a look into alternate data structure for performance gains.
 
