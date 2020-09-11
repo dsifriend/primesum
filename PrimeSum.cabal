@@ -14,14 +14,11 @@ extra-source-files:  README.md
 
 library
   exposed-modules:     PrimeSum
-  other-modules:       Subsequences
   hs-source-dirs:      src
   build-depends:       base >= 4.7 && < 5
                      , primes
-                     , integer-roots
-                     , integer-gmp
   default-language:    Haskell2010
-  ghc-options:         -Wall -Werror -O2
+  ghc-options:         -Wall -Werror -O2 -threaded
 
 executable primesum
   hs-source-dirs:      exe
@@ -29,6 +26,6 @@ executable primesum
                      , PrimeSum
   main-is:             Main.hs
   default-language:    Haskell2010
-  ghc-options:         -Wall -Werror -O2
+  ghc-options:         -Wall -Werror -O2 -threaded
 
 
